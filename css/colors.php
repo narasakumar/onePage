@@ -110,7 +110,10 @@ h6 > span:not(.nocolor),
 .dark.overlay-menu #header-wrap:not(.not-dark) #primary-menu > ul > li:hover > a,
 .dark.overlay-menu #header-wrap:not(.not-dark) #primary-menu > ul > li.current > a,
 .overlay-menu #primary-menu.dark > ul > li:hover > a,
-.overlay-menu #primary-menu.dark > ul > li.current > a { color: <?php echo $color; ?> !important; }
+.overlay-menu #primary-menu.dark > ul > li.current > a,
+.nav-tree li:hover > a,
+.nav-tree li.current > a,
+.nav-tree li.active > a { color: <?php echo $color; ?> !important; }
 
 #primary-menu.style-3 > ul > li.current > a,
 #primary-menu.sub-title > ul > li:hover > a,
@@ -192,7 +195,8 @@ ul.tab-nav.tab-nav2 li.ui-state-active a,
 #primary-menu.dark ul li .mega-menu-content,
 .dark #primary-menu:not(.not-dark) ul li .mega-menu-content.style-2,
 #primary-menu.dark ul li .mega-menu-content.style-2,
-.dark #top-cart .top-cart-content { border-top-color: <?php echo $color; ?>; }
+.dark #top-cart .top-cart-content,
+.tabs.tabs-tb ul.tab-nav li.ui-tabs-active a { border-top-color: <?php echo $color; ?>; }
 
 #page-menu.dots-menu nav li .dots-menu-caption:after,
 .title-block { border-left-color: <?php echo $color; ?>; }
@@ -205,7 +209,8 @@ ul.tab-nav.tab-nav2 li.ui-state-active a,
 .fancy-title.title-bottom-border h4,
 .fancy-title.title-bottom-border h5,
 .fancy-title.title-bottom-border h6,
-.more-link { border-bottom-color: <?php echo $color; ?>; }
+.more-link,
+.tabs.tabs-bb ul.tab-nav li.ui-tabs-active a { border-bottom-color: <?php echo $color; ?>; }
 
 .border-color,
 .process-steps li.active a,
