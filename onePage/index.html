@@ -380,6 +380,51 @@
 
 					<div class="topmargin center"><a href="#" class="button button-border button-circle t600">View Personas We Serve</a></div>
 
+					<div class="container topmargin-lg clearfix">
+
+						<div id="oc-clients" class="owl-carousel topmargin image-carousel">
+
+							<div class="oc-item"><a href="#"><img src="../images/clients/1.png" alt="Clients"></a></div>
+							<div class="oc-item"><a href="#"><img src="../images/clients/2.png" alt="Clients"></a></div>
+							<div class="oc-item"><a href="#"><img src="../images/clients/3.png" alt="Clients"></a></div>
+							<div class="oc-item"><a href="#"><img src="../images/clients/4.png" alt="Clients"></a></div>
+							<div class="oc-item"><a href="#"><img src="../images/clients/5.png" alt="Clients"></a></div>
+							<div class="oc-item"><a href="#"><img src="../images/clients/6.png" alt="Clients"></a></div>
+							<div class="oc-item"><a href="#"><img src="../images/clients/7.png" alt="Clients"></a></div>
+							<div class="oc-item"><a href="#"><img src="../images/clients/8.png" alt="Clients"></a></div>
+							<div class="oc-item"><a href="#"><img src="../images/clients/9.png" alt="Clients"></a></div>
+							<div class="oc-item"><a href="#"><img src="../images/clients/10.png" alt="Clients"></a></div>
+
+						</div>
+
+						<script type="text/javascript">
+
+							jQuery(document).ready(function($) {
+
+								var ocClients = $("#oc-clients");
+
+								ocClients.owlCarousel({
+									margin: 80,
+									loop: true,
+									nav: false,
+									autoplay: true,
+									dots: false,
+									autoplayHoverPause: true,
+									responsive:{
+										0:{ items:2 },
+										480:{ items:3 },
+										768:{ items:4 },
+										992:{ items:5 },
+										1200:{ items:6 }
+									}
+								});
+
+							});
+
+						</script>
+
+					</div>
+
 				</div>
 
 				<div id="section-services" class="page-section notoppadding">
@@ -539,51 +584,6 @@
 						</div>
 					</div>
 
-					<div class="container topmargin-lg clearfix">
-
-						<div id="oc-clients" class="owl-carousel topmargin image-carousel">
-
-							<div class="oc-item"><a href="#"><img src="../images/clients/1.png" alt="Clients"></a></div>
-							<div class="oc-item"><a href="#"><img src="../images/clients/2.png" alt="Clients"></a></div>
-							<div class="oc-item"><a href="#"><img src="../images/clients/3.png" alt="Clients"></a></div>
-							<div class="oc-item"><a href="#"><img src="../images/clients/4.png" alt="Clients"></a></div>
-							<div class="oc-item"><a href="#"><img src="../images/clients/5.png" alt="Clients"></a></div>
-							<div class="oc-item"><a href="#"><img src="../images/clients/6.png" alt="Clients"></a></div>
-							<div class="oc-item"><a href="#"><img src="../images/clients/7.png" alt="Clients"></a></div>
-							<div class="oc-item"><a href="#"><img src="../images/clients/8.png" alt="Clients"></a></div>
-							<div class="oc-item"><a href="#"><img src="../images/clients/9.png" alt="Clients"></a></div>
-							<div class="oc-item"><a href="#"><img src="../images/clients/10.png" alt="Clients"></a></div>
-
-						</div>
-
-						<script type="text/javascript">
-
-							jQuery(document).ready(function($) {
-
-								var ocClients = $("#oc-clients");
-
-								ocClients.owlCarousel({
-									margin: 80,
-									loop: true,
-									nav: false,
-									autoplay: true,
-									dots: false,
-									autoplayHoverPause: true,
-									responsive:{
-										0:{ items:2 },
-										480:{ items:3 },
-										768:{ items:4 },
-										992:{ items:5 },
-										1200:{ items:6 }
-									}
-								});
-
-							});
-
-						</script>
-
-					</div>
-
 				</div>
 
 				<div id="section-contact" class="page-section notoppadding">
@@ -592,28 +592,18 @@
 						<div id="headquarters-map" class="col-md-8 col-sm-6 gmap hidden-xs"></div>
 						<div class="col-md-4 col-sm-6" style="background-color: #F5F5F5;">
 							<div class="col-padding max-height">
-								<h3 class="font-body t400 ls1">Our Headquarters</h3>
 
 								<div style="font-size: 16px; line-height: 1.7;">
 									<address style="line-height: 1.7;">
-										<strong>North America:</strong><br>
-										795 Folsom Ave, Suite 600<br>
-										San Francisco, CA 94107<br>
+										<strong>Martin Luthor King Library</strong><br>
+										1 Washington Square
+										<br>San Jose CA 95112
 									</address>
 
-									<div class="clear topmargin-sm"></div>
-
-									<address style="line-height: 1.7;">
-										<strong>Europe:</strong><br>
-										795 Folsom Ave, Suite 600<br>
-										San Francisco, CA 94107<br>
-									</address>
-
-									<div class="clear topmargin"></div>
-
-									<abbr title="Phone Number"><strong>Phone:</strong></abbr> (91) 8547 632521<br>
-									<abbr title="Fax"><strong>Fax:</strong></abbr> (91) 11 4752 1433<br>
-									<abbr title="Email Address"><strong>Email:</strong></abbr> info@canvas.com
+									<abbr title="Phone Number"><strong>Phone:</strong></abbr> (669) 237-5784<br>
+									<abbr title="Phone Number"><strong>Phone:</strong></abbr> (669) 237-5784<br>
+									<abbr title="Phone Number"><strong>Phone:</strong></abbr> (669) 237-5784<br>
+									<abbr title="Email Address"><strong>Email:</strong></abbr> marinesolutions@gmail.com
 								</div>
 							</div>
 						</div>
@@ -626,13 +616,13 @@
 
 						jQuery(window).load( function(){
 							jQuery('#headquarters-map').gMap({
-								address: 'Melbourne, Australia',
+								address: '1 Washington Square San Jose, CA 95112',
 								maptype: 'ROADMAP',
-								zoom: 14,
+								zoom: 15,
 								markers: [
 									{
-										address: "Melbourne, Australia",
-										html: "Melbourne, Australia",
+										address: "1 Washington Square San Jose, CA 95112",
+										html: "1 Washington Square San Jose, CA 95112",
 										icon: {
 											image: "images/icons/map-icon-red.png",
 											iconsize: [32, 32],
@@ -747,10 +737,10 @@
 
 								<ul class="list-unstyled footer-site-links nobottommargin">
 									<li><a href="#" data-scrollto="#wrapper" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Top</a></li>
-									<li><a href="#" data-scrollto="#section-about" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">About</a></li>
-									<li><a href="#" data-scrollto="#section-works" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Works</a></li>
-									<li><a href="#" data-scrollto="#section-services" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Services</a></li>
-									<li><a href="#" data-scrollto="#section-blog" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Blog</a></li>
+									<li><a href="#" data-scrollto="#section-marine" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Marine</a></li>
+									<li><a href="#" data-scrollto="#section-solutions" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Solutions</a></li>
+									<li><a href="#" data-scrollto="#section-future" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Future Excitements</a></li>
+									<li><a href="#" data-scrollto="#section-about" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">About Us</a></li>
 									<li><a href="#" data-scrollto="#section-contact" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Contact</a></li>
 								</ul>
 							</div>
@@ -792,7 +782,9 @@
 							<div class="widget clearfix">
 								<h4>Contact</h4>
 
-								<p class="lead">795 Folsom Ave, Suite 600<br>San Francisco, CA 94107</p>
+								<p class="lead">Martin Luthor King Library,
+								<br>1 Washington Square Floor 4
+								<br>San Jose, CA 95192</p>
 
 								<div class="center topmargin-sm">
 									<a href="#" class="social-icon inline-block noborder si-small si-facebook" title="Facebook">
@@ -823,7 +815,7 @@
 
 			<div id="copyrights">
 				<div class="container center clearfix">
-					Copyright Canvas 2015 | All Rights Reserved
+					Copyright Information
 				</div>
 			</div>
 
