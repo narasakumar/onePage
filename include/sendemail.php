@@ -10,6 +10,7 @@ if( isset( $_POST['template-contactform-submit'] ) AND $_POST['template-contactf
         $name = $_POST['template-contactform-name'];
         $email = $_POST['template-contactform-email'];
         $phone = $_POST['template-contactform-phone'];
+        $service = $_POST['template-contactform-service'];
         $subject = $_POST['template-contactform-subject'];
         $message = $_POST['template-contactform-message'];
 
@@ -30,11 +31,12 @@ if( isset( $_POST['template-contactform-submit'] ) AND $_POST['template-contactf
             $name = isset($name) ? "Name: $name<br><br>" : '';
             $email = isset($email) ? "Email: $email<br><br>" : '';
             $phone = isset($phone) ? "Phone: $phone<br><br>" : '';
+            $service = isset($service) ? "Service: $service<br><br>" : '';
             $message = isset($message) ? "Message: $message<br><br>" : '';
 
             $referrer = $_SERVER['HTTP_REFERER'] ? '<br><br><br>This Form was submitted from: ' . $_SERVER['HTTP_REFERER'] : '';
 
-            $body = "$name $email $phone $message $referrer";
+            $body = "$name $email $phone $service $message $referrer";
 
             $mail->MsgHTML( $body );
             $sendEmail = $mail->Send();
